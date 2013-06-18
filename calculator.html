@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>
+calculator
+</title>
+<script type="text/javascript">
+function output(){
+calc.result.value=eval(calc.result.value);
+}
+</script>
+<style>
+#container{border:5px groove green;width:250px;height:205px;margin-top:80px; margin-left:500px;}
+#Buttons{padding:30px;background-color:#8A2Ab2;}
+</style>
+</head>
+<body>
+<div id="container">
+<form name="calc">
+
+<tr>
+<td><input name="result" size="20" style="margin:10px";/><br />
+</td>
+</tr>
+<div id="Buttons">
+<tr>
+<td>
+<input type="button" name="7" value="7" onclick="calc.result.value +='7'" style="width:40px"; >
+<input type="button" name="8" value="8" onclick="calc.result.value +='8'" style="width:40px";>
+<input type="button" name="9" value="9" onclick="calc.result.value +='9'" style="width:40px";>
+<input type="button" name="plus" value="+" onclick="calc.result.value +='+'" style="width:40px";><br />
+<input type="button" name="4" value="4" onclick="calc.result.value +='4'" style="width:40px";>
+<input type="button" name="5" value="5" onclick="calc.result.value +='5'" style="width:40px";>
+<input type="button" name="6" value="6" onclick="calc.result.value +='6'" style="width:40px";>
+<input type="button" name="minus" value="-" onclick="calc.result.value +='-'" style="width:40px";><br />
+<input type="button" name="1" value="1" onclick="calc.result.value +='1'" style="width:40px";>
+<input type="button" name="2" value="2" onclick="calc.result.value +='2'" style="width:40px";>
+<input type="button" name="3" value="3" onclick="calc.result.value +='3'" style="width:40px";>
+<input type="button" name="multiply" value="X" onclick="calc.result.value +='X'" style="width:40px";><br />
+<input type="button" name="0" value="0" onclick="calc.result.value +='0'" style="width:40px";>
+<input type="button" name="division" value="/" onclick="calc.result.value +='/'" style="width:40px";>
+<input type="button" name="equal" value="=" onclick="output()" style="width:40px; background-color:#AFEEEE";>
+<input type="button" name="clear" value="C" onclick="calc.result.value =' '" style="width:50px;height:20px; background-color:#FF0000";>
+</td>
+</tr>
+</div>
+</div>
+</body>
+</html>
